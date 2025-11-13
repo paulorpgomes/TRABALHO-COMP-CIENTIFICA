@@ -28,6 +28,13 @@ namespace Toolkit
                 Console.WriteLine("4. Avaliador proposicional básico");
                 Console.WriteLine("5. Reconhecedor L_par_a e a b*");
                 Console.WriteLine();
+                Console.WriteLine("AV2 - Decidibilidade, Reconhecimento e Modelos:");
+                Console.WriteLine("6. Classificador Problema × Instância por JSON");
+                Console.WriteLine("7. Decisores decidíveis: L_fim_b e L_mult3_b");
+                Console.WriteLine("8. Reconhecedor que pode não terminar");
+                Console.WriteLine("9. Detector ingênuo de loop + reflexão");
+                Console.WriteLine("10. Simulador de AFD de casos fixos");
+                Console.WriteLine();
                 Console.WriteLine("0. Sair");
                 Console.WriteLine();
                 Console.Write("Escolha uma opção: ");
@@ -50,6 +57,21 @@ namespace Toolkit
                         break;
                     case "5":
                         new ReconhecedorLinguagens().Executar();
+                        break;
+                    case "6":
+                        new ClassificadorProblemaInstancia().Executar();
+                        break;
+                    case "7":
+                        new DecisoresDecidiveis().Executar();
+                        break;
+                    case "8":
+                        new ReconhecedorNaoTerminante().Executar();
+                        break;
+                    case "9":
+                        new DetectorLoop().Executar();
+                        break;
+                    case "10":
+                        new SimuladorAFD().Executar();
                         break;
                     case "0":
                         Console.WriteLine("Encerrando programa...");
